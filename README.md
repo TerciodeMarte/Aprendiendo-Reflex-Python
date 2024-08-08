@@ -12,7 +12,7 @@ Repositorio para hacer seguimiento de como aprendo Reflex en Python
   
 ## Bitacora✒️
 
-* **08/08/2024** - *Creación del repositorio* || * Investigación sobre reflex*
+* **08/08/2024** - *Creación del repositorio* || *Investigación sobre reflex*
 
 
 ## Licencia 📄
