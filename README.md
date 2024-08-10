@@ -14,6 +14,15 @@ Repositorio para hacer seguimiento de como aprendo Reflex en Python
 
 * **08/08/2024** - *Creación del repositorio* || *Investigación sobre reflex*
 
+### Curso 1 MoureDEV
+
+* **10/08/2024**
+    * Introducción
+    * Caracteristicas
+    * Instalación
+
+
+
 
 ## Licencia 📄
 
