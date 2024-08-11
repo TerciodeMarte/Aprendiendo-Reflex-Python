@@ -24,6 +24,9 @@ Repositorio para hacer seguimiento de como aprendo Reflex en Python
     * Fundamentos
     * Hola Mundo
 
+* **11/08/2024**
+    * Componentes
+
 
 
 
