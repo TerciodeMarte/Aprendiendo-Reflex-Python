@@ -27,6 +27,10 @@ Repositorio para hacer seguimiento de como aprendo Reflex en Python
 * **11/08/2024**
     * Componentes
 
+* **12/08/2024**
+    * Maquetación
+    * Estilos
+
 
 
 
