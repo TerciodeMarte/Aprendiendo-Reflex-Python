@@ -31,6 +31,12 @@ Repositorio para hacer seguimiento de como aprendo Reflex en Python
     * Maquetación
     * Estilos
 
+* **13/08/2024**
+    * Colores e Iconos
+    * Fuentes
+    * Imagenes
+    * Fuentes Remotas
+
 
 
 
