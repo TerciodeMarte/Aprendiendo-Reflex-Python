@@ -2,38 +2,46 @@
 
 import reflex as rx
 
+from Enlaces.views.main.appreciation import appreciation
+from Enlaces.views.main.projects import projects
+from Enlaces.views.navbar import navbar
+from Enlaces.views.main.home import home
+from Enlaces.views.main.about import about
+from Enlaces.views.footer import footer
 from rxconfig import config
-
-
-class State(rx.State):
-    """The app state."""
-
-    ...
-
 
 def index() -> rx.Component:
     # Welcome Page (Index)
-    return rx.container(
-        rx.color_mode.button(position="top-right"),
-        rx.vstack(
-            rx.heading("Hola Mundo!", size="9"),
-            rx.text(
-                "Get started by editing ",
-                rx.code(f"{config.app_name}/{config.app_name}.py"),
-                size="5",
-            ),
-            rx.link(
-                rx.button("Check out our docs!"),
-                href="https://reflex.dev/docs/getting-started/introduction/",
-                is_external=True,
-            ),
-            spacing="5",
-            justify="center",
-            min_height="85vh",
-        ),
-        rx.logo(),
+    return rx.vstack(
+        # rx.color_mode.button(position="bottom-right"),
+        navbar(),
+        home(),
+        rx.divider(width="90%"),
+        about(),
+        rx.divider(width="90%"),
+        projects(),
+        rx.divider(width="90%"),
+        appreciation(),
+        footer(),
+        width="100%",
+        justify="center",
+        align_items="center",
+        bg=rx.color("sky",2),
     )
-
-
-app = rx.App()
-app.add_page(index)
+fonts=[
+    "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap",
+]
+styles={
+    "font-family":"Ubuntu",
+}
+app = rx.App(
+    app_name="Café Con Palito",
+    stylesheets=fonts,
+    style=styles,
+    theme=rx.theme(
+        appearance="dark",
+        accent_color="indigo",
+        radius="medium"
+    )
+)
+app.add_page(component=index,title="Café Con Palito | Main",description="Main Page")
