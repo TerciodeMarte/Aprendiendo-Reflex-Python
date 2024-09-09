@@ -54,9 +54,8 @@ def home() -> rx.Component:
                 margin_bottom="0",
                 # bg=rx.color("sky",2),
             ),
-            
+        ),
         id="home",
         scroll_margin_top="5em",
-        )
     )
         
