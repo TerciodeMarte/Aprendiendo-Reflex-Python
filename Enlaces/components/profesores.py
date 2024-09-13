@@ -34,7 +34,7 @@ def profesores()->rx.Component:
         ),
         # DAM 2º Curso
         rx.text("Acceso a Datos",color_scheme="blue",align="center"),
-        rx.text("Inmaculada Deseada Cerdeiriña Del Tio",align="center"),
+        rx.text("Inmaculada D. Cerdeiriña Del Tio",align="center"),
         rx.text("Desarrollo de Interfaces",color_scheme="blue",align="center"),
         rx.hstack(
             rx.text("Carlos Solano Hidalgo"),
