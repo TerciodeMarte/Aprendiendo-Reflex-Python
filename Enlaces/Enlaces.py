@@ -51,7 +51,6 @@ def albano() -> rx.Component:
         tech_stack([
             {"name":"Python","icon":"devicon-python-plain"},
             {"name":"FastAPI","icon":"devicon-fastapi-plain"},
-            {"name":"Docker","icon":"devicon-docker-plain"},
             {"name":"PostgreSQL","icon":"devicon-postgresql-plain"},
             {"name":"MongoDB","icon":"devicon-mongodb-plain"},
             {"name":"Git","icon":"devicon-git-plain"},
