@@ -241,7 +241,7 @@ def ramiro() -> rx.Component:
                 icon="school",
                 title="CEIP Atalaya - CEIP San Antonio - CEIP El Salvador",
                 subtitle="Profesor sustituto de Educación Plástica",
-                description="Impartir clases de pintura a niños de primaria.",
+                description="Impartir clases de Educación Plástica en ESO.",
                 date="2007",
             ),
             Info(
