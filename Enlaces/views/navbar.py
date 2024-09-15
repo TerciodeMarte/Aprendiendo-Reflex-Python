@@ -65,4 +65,5 @@ def navbar(index:bool) -> rx.Component:
         position="fixed",
         top="0px",
         width="100%",
+        z_index=10,
     )
