@@ -5,6 +5,8 @@ def info_person(name: str,title:str, img: str, description: str,social_media:lis
     social_media_hstack:list=[]
     for social in social_media:
         social_media_hstack.append(rx.link(rx.icon(social["icon"]),href=social["url"],is_external=True))
+    if extra:
+        social_media_hstack.append(rx.link("Más sobre mí",href=extra))
     return rx.vstack(
         rx.image(img,align="center",width="40%",height="auto",border_radius="1em",alt=name),
         rx.container(

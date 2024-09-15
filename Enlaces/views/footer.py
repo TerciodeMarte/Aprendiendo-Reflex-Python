@@ -7,7 +7,7 @@ def footer() -> rx.Component:
     return rx.vstack(
         rx.text("Made by Café Con Palito",align="center"),
         rx.text("With ❤️",align="center"),
-        rx.image("logo-negative-rb.png",
+        rx.image("../logo-negative-rb.png",
                 width="8em",
                 height="auto",
                 align="center",

@@ -20,7 +20,7 @@ def about() -> rx.Component:
                     {"icon":"linkedin","url":"https://www.linkedin.com/in/albano-diez/"},
                     {"icon":"instagram","url":"https://www.instagram.com/terciodemarte/"}
                 ],
-                extra="/#"
+                extra="/albano"
                 ),
             info_person(
                 name="Carmen Barrios",
@@ -33,7 +33,7 @@ def about() -> rx.Component:
                 social_media=[
                     {"icon":"github","url":"https://github.com/CarmenBarrios"}
                 ],
-                extra="/#"
+                extra=None
             ),
             info_person(
                 name="Daniel Espinosa",
@@ -47,10 +47,10 @@ def about() -> rx.Component:
                     {"icon":"github","url":"https://github.com/Daniel-Espinosa"},
                     {"icon":"linkedin","url":"https://www.linkedin.com/in/daniel-espinosa-garc%C3%ADa/"}
                 ],
-                extra="/#"
+                extra=None
             ),
             info_person(
-                name="Ramiro Gutierrez",
+                name="Ramiro Gutiérrez",
                 img="/img/ramiro.webp",
                 title="Backend Developer & UI/UX Designer",
                 description="""
@@ -61,7 +61,7 @@ def about() -> rx.Component:
                     {"icon":"github","url":"https://github.com/ramirogvalverde"},
                     {"icon":"linkedin","url":"https://www.linkedin.com/in/ramirogvalverde/"}
                 ],
-                extra="/#"
+                extra="/ramiro"
             ),
             width="100%",
             align_items="center",
