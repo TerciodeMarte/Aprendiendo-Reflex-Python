@@ -16,12 +16,24 @@ from Enlaces.views.people.info import info
 from Enlaces.data import Info
 from rxconfig import config
 
+class CountState(rx.State):
+    count: int = 0
+
+    @rx.event
+    def increment(self):
+        print("Incrementing")
+
+    @rx.event
+    def decrement(self):
+        self.count -= 1
+
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.vstack(
         # rx.color_mode.button(position="bottom-right"),
         navbar(index=True),
         home(),
+        rx.button("Albano",on_click=CountState.increment,width="100px",height="50px"),
         rx.divider(width="90%"),
         about(),
         rx.divider(width="90%"),
@@ -53,6 +65,7 @@ def albano() -> rx.Component:
             {"name":"FastAPI","icon":"devicon-fastapi-plain"},
             {"name":"PostgreSQL","icon":"devicon-postgresql-plain"},
             {"name":"MongoDB","icon":"devicon-mongodb-plain"},
+            {"name":"Redis","icon":"devicon-redis-plain"},
             {"name":"Git","icon":"devicon-git-plain"},
             {"name":"GitLab","icon":"devicon-gitlab-plain"},
             {"name":"Linux","icon":"devicon-linux-plain"},
@@ -158,6 +171,25 @@ def albano() -> rx.Component:
                 image = "../data/web_cafe.png",
                 github = "https://github.com/TerciodeMarte/Aprendiendo-Reflex-Python"
             ),
+            Info(
+                icon = "panels-top-left",
+                title = "Acortador de URLs",
+                subtitle =" Acortador de URLs con Redis",
+                description = "Un acortador de URLs que utiliza Redis para almacenar las URLs acortadas.",
+                technologies = [
+                    {
+                        "icon": "devicon-javascript-plain", 
+                        "name": "JavaScript"
+                    },
+                    {
+                        "icon": "devicon-redis-plain", 
+                        "name": "Redis"
+                    }
+                ],
+                image = "../data/acortador.png",
+                url = "https://shortener.cafeconpalito.com/",
+                github = "https://github.com/TerciodeMarte/URL-Shortener"
+            ),
             ]),
         footer(),
         width="100%",
@@ -168,7 +200,7 @@ def albano() -> rx.Component:
     )
 
 def ramiro() -> rx.Component:
-    # Curriculum de Albano
+    # Curriculum de Ramiro
     return rx.vstack(
         navbar(index=False),
         header(avatar="../img/ramiro.webp",name="Ramiro Gutiérrez Valverde",title="Backend Developer",localitation="Santander, Cantabria",
@@ -312,7 +344,6 @@ styles={
     "font-family":"Ubuntu",
 }
 app = rx.App(
-    app_name="Café Con Palito",
     stylesheets=fonts,
     style=styles,
     theme=rx.theme(
