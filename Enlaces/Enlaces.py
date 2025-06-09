@@ -16,16 +16,6 @@ from Enlaces.views.people.info import info
 from Enlaces.data import Info
 from rxconfig import config
 
-class CountState(rx.State):
-    count: int = 0
-
-    @rx.event
-    def increment(self):
-        print("Incrementing")
-
-    @rx.event
-    def decrement(self):
-        self.count -= 1
 
 def index() -> rx.Component:
     # Welcome Page (Index)
@@ -33,7 +23,6 @@ def index() -> rx.Component:
         # rx.color_mode.button(position="bottom-right"),
         navbar(index=True),
         home(),
-        rx.button("Albano",on_click=CountState.increment,width="100px",height="50px"),
         rx.divider(width="90%"),
         about(),
         rx.divider(width="90%"),
